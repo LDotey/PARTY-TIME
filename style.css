@@ -1,11 +1,65 @@
 body {
     background: lightblue;
+    border: 50px;
 }
 h1 {
-    text-align: center;
+    margin-left: 50px;
     font-family: "Helvetica";
     color: tomato;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
 }
+nav {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: rgb(234, 127, 108);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
 h2 {
     font-size: 10px;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+div.cyclone {
+    /* animation: rotation 2s infinite linear;
+    rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      } */
+      /* transform: rotate(3.142rad); */
+      animation-name: rotate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
